@@ -1,3 +1,91 @@
 body {
-    background-image: url(../My-Favorite-Animal/images/antarctica.jpg);
+  max-width: 960px;
+  margin: 0 auto;
+  background-image: url("../images/antarctica.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  opacity: 98%;
+}
+
+/*navbar*/
+ul {
+  background-color: rgb(231, 231, 231);
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: rgb(53, 187, 240);
+}
+
+.active {
+  background-color: #a09fca;
+}
+/*end of navbar*/
+
+div,
+span,
+section {
+  background-color: whitesmoke;
+}
+
+h1 {
+  text-align: center;
+}
+
+p {
+  text-align: justify;
+}
+
+h1,
+span,
+.fur,
+.ears,
+.size,
+.paws {
+  padding: 10px;
+}
+
+.left, .right {
+  max-width: 48%;
+  flex: 1 0 15em;
+}
+
+.fur, .ears{
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.fur,
+.ears,
+.paws,
+.size {
+  margin-bottom: 25px;
+}
+
+img {
+  width: 400px;
+  height: auto;
+  float: right;
 }
